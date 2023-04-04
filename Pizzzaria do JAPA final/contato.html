@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contatos</title>
+    <link rel="website Icon" type="png" href="Imagens/pizza.png">
+    <link rel="stylesheet" type="text/css" href="cssgeral.css">
+</head>
+<body>
+
+<body>
+        <header>
+        <a class="brand" href="index.html">Pizzaria do JAPA</a>
+        <nav class="navbar">
+            <button class="navbar__nav-button">&#9776;</button>
+            <ul class="navbar__nav-list">
+                <li class="nav-list__item"><a href="index.html">Home</a></li>
+                <li class="nav-list__item"><a href="quemsomos.html">Sobre nós</a></li>
+                
+                <li class="dropdown nav-list__item">
+                  <a href="javascript:void(0)" class="dropbtn">Cardápio</a>
+                  <div class="dropdown-content">
+                    <a href="pizzas.html"> Pizzas </a>
+                    <a href="bebidas.html">Bebidas </a>
+                  </div>
+                </li>
+                <li class="nav-list__item"><a href="contato.html">Contato</a></li>
+                <li class="nav-list__item"><a href="localizao.html">Localização</a></li>
+              </ul>
+        </nav>
+    </header>
+
+    <br>
+    <br>
+    <br>
+    <br>
+  <div id="local1">Fale Conosco</div>
+
+
+    <!-- inicio do formulario  -->
+    <div id="fieldset_contatos">
+
+<div class="container">
+  <main>
+
+      <form class="form">
+
+          <div class="form-group">
+              <label for="name" class="form-group__label">Nome</label>
+              <input type="text" id="name" name="name" required autocomplete="off" autofocus
+                  class="form-group__input" placeholder="Insira seu Nome">
+          </div>
+
+
+          <div class="form-group">
+            <label for="Endereço" class="form-group__label">Endereço</label>
+            <input type="text" id="Endereço" name="Endereço" required autocomplete="off" autofocus
+                class="form-group__input" placeholder="Insira o seu Endereço">
+        </div>
+
+
+          <div class="form-group">
+              <label for="email" class="form-group__label">E-mail</label>
+              <input type="email" id="email" name="name" required autocomplete="off" class="form-group__input"
+                  placeholder="Insira seu email">
+          </div>
+
+          <div class="form-group half-md">
+              <label for="phone" class="form-group__label">Telefone</label>
+              <input type="tel" id="phone" name="phone" required autocomplete="off" class="form-group__input"
+                  placeholder="(99) 99999-9999">
+          </div>
+
+
+          <div class="form-group half-md">
+              <label for="subject" class="form-group__label">Assunto</label>
+              <select name="subject" required autocomplete="off" id="subject" class="form-group__input form-group__select">
+                  <option value="0">Selecione</option>
+                  <option value="1">Dúvidas</option>
+                  <option value="2">Sugestões</option>
+                  <option value="3">Críticas</option>
+                  <option value="4">Elogios</option>
+                  <option value="5">Outro</option>
+              </select>
+          </div>
+
+          <br><br>
+          <div >
+          <h2>Avaliação<h2></div>
+
+          <div id="avaliacao" required autocomplete="off" class="form-group__label">
+          <br><br>
+          <input type="radio" name="Escolaridade" value="RUIM" required>Ruim  </label>
+          <input type="radio" name="Escolaridade" value="BOM" required> Bom </label>
+          <input type="radio" name="Escolaridade" value="EXCE" required> Excelente </label>
+          <br>
+          <br>
+        </div>
+          
+
+          <div class="form-group"  required autocomplete="off">
+              <label for="message" class="form-group__label">Mensagem</label>
+              <textarea class="form-group__input" id="message" name="message" rows="6"
+                  placeholder="Insira sua mensagem"></textarea>
+            
+              <br><br>
+          </div>
+          <button id="btn_center" class="form__btn btn--red" type="submit">Enviar mensagem</button>
+      </form>
+
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+
+
+
+
+</div>
+
+
+    
+        
+    
+  <!-- botao topo inicio -->
+  <section></section>
+  <a href="#" class="btn"></a>
+
+  <!-- fim botao topo -->
+
+
+    
+
+
+
+
+  <footer>
+
+
+    <div class="footer__group">
+        <div class="contact">
+            <br><br>
+            <ul class="phones">
+
+                <li><img class="footer-icon" src="Imagens/telefonebranco.png"
+                        alt="Imagem de um telefone">(16) 3516-5900</li>
+            </ul><br>
+
+
+            <ul class="social-mediaI">
+                <li><a href="https://www.instagram.com/"><img class="footer-icon" src="Imagens/instagrambranco.png"
+                            alt="Logo do Instagram"></a> Instagram</li>
+
+
+            <ul class="social-mediaF">
+                <li><a href="https://www.facebook.com/"><img class="footer-icon" src="Imagens/facebookbranco.png"
+                            alt="Logo do Facebook"></a> Facebook</li>
+
+            </ul>
+
+
+            <br><br>
+            <li>
+            Atendimento das 18:00 às 00:00 horas de terça a domingo.
+
+            <br>
+            <br>
+            Localização: Rua Dr. Benjamin Anderson Stauffer, 801 - Jardim Botânico, Ribeirão Preto - SP
+            <br>
+            Referencia: Parque Raia</li>
+            <br><br>
+            <img  src="Imagens/Formas de Pagamento.png" alt="" height="45px">
+        </div>
+
+        <div class="address">
+            <br><br>
+            <div id="maps"><p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3719.5694054559867!2d-47.79798075032516!3d-21.20925778476289!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b9b8d22d5c6283%3A0x14d4ced0813420c4!2sR.%20Dr.%20Benjamin%20Anderson%20Stauffer%2C%20801%20-%20Jardim%20Bot%C3%A2nico%2C%20Ribeir%C3%A3o%20Preto%20-%20SP%2C%2014021-617!5e0!3m2!1spt-BR!2sbr!4v1679982651748!5m2!1spt-BR!2sbr" width="250" height="200" style="border:10;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p></div>
+        </div>
+    </div>
+
+
+</footer>

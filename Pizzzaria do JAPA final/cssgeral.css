@@ -1,0 +1,685 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-align: justify;
+
+}
+
+
+
+body {
+    
+         /* imagem do fundo */
+    background-image: url(Imagens/fundo.jpg);
+    
+
+    font-family: 'Nunito', sans-serif;
+    font-weight: 100;
+    background-color: #f9f9f9;
+}
+
+/* header */
+
+header {
+    background-color: #FFDB83;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    height: 80px;
+    padding: 0 10%;
+
+    position: fixed;
+    z-index: 2;
+}
+
+.brand {
+    font-size: 30px;
+    font-weight: 500;
+    color: #000;
+    text-decoration: none;
+}
+
+
+/*inicio menu*/
+.navbar__nav-button {
+    display: block;
+    font-size: 1.7rem;
+    cursor: pointer;
+    background-color: #FFDB83;
+    border: none;
+    margin-right: 15px;
+    padding: 0 5px;
+}
+
+.navbar__nav-button:focus,
+.navbar__nav-button:active {
+    outline-color: #FFDB83;
+}
+
+.nav-list__item {
+    padding-left: 20px;
+    list-style: none;
+}
+
+.nav-list__item a {
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 90px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    margin-left: -10px;
+    margin-top: -11;
+    /* nesse margin que ajusta a distancia botao cardapio */
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {background-color: #f1f1f1;}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+/*menu fim*/
+
+@media (max-width: 767px) {
+    .navbar__nav-list {
+        display: none;
+        flex-direction: column;
+        position: fixed;
+        background-color:  #FFDB83;
+        border-top: solid 1px #ffd480;
+        
+        width: 100%;
+        z-index: 2;
+        right: 0px;
+        top: 80px;
+        transition: all 8s;
+    }
+
+    .navbar__nav-list--open {
+        display: block;
+    }
+    
+    .nav-list__item:hover {
+        background-color: #FFC383;
+    }
+    
+    .nav-list__item a   {
+        display: block;
+        text-align: center;
+        padding: 10px 0;
+    }
+}
+
+@media (min-width: 768px) {
+    .navbar__nav-list {
+        display: flex;
+        margin-right: 10px;
+    }
+
+    .navbar__nav-button {
+        display: none;
+    }
+
+    .nav-list__item a:hover {
+        color: #FF5030;
+        border-bottom: solid 1px #FF5030;
+    }
+}
+
+
+/* PROMOÇÃO */
+
+.promotion {
+    background-image: url(https://images.alphacoders.com/107/1078503.jpg?dl=1);
+    border-radius: 20px;
+    align-self: center;
+    padding: 30px;
+     box-shadow: 0 5px 8px #ccc; 
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    max-width: 100%;
+}
+
+.promotion__title {
+    font-size: 40px;
+    color: whitesmoke   ;
+    text-align: center;
+    text-shadow:
+    -1px 0px 0px black,
+    1px 0px 0px black,
+    0px -1px 0px black,
+    0px 1px 0px black;
+}
+
+.promotion__description {
+    text-align: center;
+    font-size: 32px;
+    text-shadow:
+    -1px 0px 0px black,
+    1px 0px 0px black,
+    0px -1px 0px black,
+    0px 1px 0px black;
+    color: white;
+
+}
+
+.promotion__btn {
+    background-color: white;
+    align-self: flex-end;
+    margin-top: 25px;
+}
+
+.promotion__icon {
+    width: 100px;
+    height: 100px;
+    transform: rotate(180deg);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+/* QRCODE */
+
+.promotion_qrcode {
+    align-self: center;
+    padding: 30px;
+    /* box-shadow: 0 5px 8px #ccc; */
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    max-width: 95%;
+}
+
+.h2__qrcode {
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+.img__qrcode {
+    width: 300px;
+    height: 340px;
+    transform: rotate(180deg);
+    margin-top: -100px;
+    margin-bottom: 20px;
+}
+
+.p_qrcode {
+    text-align: center;
+}
+
+/* EGERAL */
+
+.container {
+    width: 100%;
+    padding-top: 80px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.title  {
+    color: #FF5030;
+    align-self: center;
+    border-bottom: solid 1px #FF5030;
+    text-indent: 0;
+    text-align: center;
+    padding: 0 20px;
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+}
+
+.subtitle {
+    color: #FF5030;
+    font-size: 1.2rem;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+ol {
+    list-style: lower-roman;
+    list-style-position: inside;
+}
+
+.btn--red {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: fit-content;
+
+    border: 2px solid #FF5030;
+    border-radius: 30px;
+    padding: 5px 15px;
+    margin: 10px 0;
+    
+    text-decoration: none;
+    text-align: center;
+    color: #FF5030;
+    font-weight: 600;
+    text-indent: 0;
+}
+
+.btn--red:hover {
+    background-color: #FFE1C1;
+}
+
+
+/* FOOTER */
+
+footer {
+    background-color: #262626;
+    color: #efefef;
+    padding: 1px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font-size: .9rem;
+}
+
+footer ul {
+    list-style: none;
+}
+
+.footer__group {
+    display: flex;
+    justify-content: space-evenly;
+    width: 90%;
+    margin-bottom: 25px;
+}
+
+.address p {
+    margin-top: 5px;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+.phones li {
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    font-size: 1rem;
+    margin-top: 5px;
+}
+
+.phones img {
+    margin-right: 10px;
+}
+
+.social-media {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: right;
+    margin-top: 10px;
+}
+
+footer a {
+    color: #efefef;
+}
+
+.footer-icon {
+    width: 25px;
+}
+
+@media (max-width: 544px){
+    .footer__group {
+        flex-direction: column;
+    }
+
+    .social-media {
+        justify-content: center;
+        margin-bottom: 15px;
+    }
+
+    .social-mediaI {
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 10;
+    }
+}
+
+#maps{
+margin-right: -60px;
+margin-top: 25px;
+}
+
+/* CSS PAGINA QUEM SOMOS */
+
+#nossahistoria{
+    background-color: white;
+    width: 1250px;
+    height: 250px;
+    padding: 40px 0px;
+    border: 2px ridge rgba(255, 255, 0, 0.329);
+    margin: auto;
+    border-radius: 20px;
+    box-shadow: 0 0 7px #fa2500;
+}
+
+#pizzaiolo{
+    margin-top: 95px;
+    
+}
+
+#pizzaioloinverter{
+    margin-left: 837px;
+    margin-top: 95px;
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+
+    
+}
+
+
+/* CSS DA PAGINA DO CARDAPIO (PIZZAS E BEBIDAS)*/
+
+.btn--red {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: fit-content;
+
+    border: 2px solid #FF5030;
+    border-radius: 30px;
+    padding: 5px 15px;
+    margin: 10px 0;
+    
+    text-decoration: none;
+    text-align: center;
+    color: #FF5030;
+    font-weight: 600;
+    text-indent: 0;
+}
+
+
+.btn--red {
+    
+    flex-wrap: wrap;
+    justify-content: center;
+    width: fit-content;
+
+    border: 2px solid #FF5030;
+    border-radius: 30px;
+    padding: 5px 15px;
+   
+    margin:  0% auto 13px;
+
+    text-decoration: none;
+    text-align: center;
+    color: #FF5030;
+    font-weight: 600;
+    text-indent: 0;
+}
+
+.btn--red:hover {
+    cursor: pointer;
+    background-color: #FFE1C1;
+}   
+
+/* TITULO DA PAGINA */
+#titulo{
+    background-color:#faba76 ;
+    text-align: center;
+    margin: auto;
+    width: 1325px;
+    padding: 15px 0px;
+    font-size: 30px;
+    border-radius: 15px;
+
+}
+
+/* GRIDZÃO */
+.grid-container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: lightyellow;
+    padding: 10px;
+    column-gap: 30px;
+    row-gap: 25px;
+    border-radius: 15px;
+}
+
+/* OS BLOCO CONTENDO OS ITENS */
+.grid-item{
+    border: 2px solid darksalmon;
+    border-radius: 30px;
+    text-align: center;
+    padding: 10px;
+    
+} 
+
+/* paragrafo <p> */
+#descitens{
+    padding: 0px 2px;
+    text-align: center;
+    font-size: 20px;
+}
+
+/* onde ta o titulo do item <fieldset> */
+#griditens{
+    border-radius: 100px;
+    margin: auto;
+    width: 300px;
+    border-color:darkgoldenrod;
+
+}
+
+/* titulo do produto e descrição do preço */
+#h3grid{
+    padding: 10px 0px;
+    text-align: center;
+    margin:  0% auto 0px;
+
+}
+
+/* AQUI É O CSS DA PAGINA DE LOCALIZAÇÃO */
+
+#local1{
+    background-color:#faba76 ;
+    text-align: center;
+    margin: auto;
+    width: 1325px;
+    padding: 15px 0px;
+    font-size: 30px;
+    border-radius: 15px;
+}
+
+#local{
+    margin: left;
+    justify-content:flex-start
+
+}
+
+#mapa{
+    float: left;
+    border: 3px solid lightcoral;
+    border-radius: 6px;
+    width: 606px;
+}
+
+#descmapa{
+    float: right;
+    padding: 190px 100px;
+    width: 606px;
+    font-size: 24px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: -150px;
+}
+
+#pontoloca{
+    margin-left: 300px;
+    margin-top: 50px;
+
+}
+
+
+
+#nossahist{
+    text-align: center;
+}
+
+#nossahist1{
+    text-align: center;
+}
+
+
+/*  botao de subir  */
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+    text-decoration: none;
+}
+.btn::after {
+    content: "↑";
+    font-size: 90px;
+    font-weight: bold;
+    color: rgb(216, 29, 29);
+    transition: margin-top 250ms;
+}
+.btn:hover::after {
+    margin-top:-8px;
+}
+
+/*  botao de subir fim */
+
+#fale{
+    text-align: center;
+}
+
+
+/*  css  contatos */ 
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+
+    margin-top: 30px;
+    align-self: center;
+}
+
+.form {
+    margin-top: 10px;
+    margin-bottom: 15px;
+    width: 80%;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-group {
+    width: 100%;
+}
+
+
+.form-group__input {
+    font-size: .95rem;
+    font-family: 'Nunito', sans-serif;
+    padding: 8px 10px;
+    margin-bottom: 20px;
+
+    border-radius: 8px;
+    border: solid 1px #c4c4c4;
+
+    color: #464646;
+    width: 100%;
+}
+
+
+.form-group__input:focus, .form-group__input:active {
+
+    outline: none;
+    box-shadow: 0 0 7px #fa2500;
+}
+
+.form-group__label {
+    color: #464646;
+    display: block;
+    margin-bottom: 5px;
+}
+
+
+.form__btn {
+    padding: 8px 10px;
+    margin-bottom: 30px;
+    margin-left: 15px;
+    border-radius: 8px;
+    border: 2px solid #FF5030;
+    background-color: #f9f9f9;
+    color: #FF5030;
+    font-size: 1rem;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.form__btn:active {
+
+    outline: none;
+}
+
+.form-group__select {
+    font-size: .95rem;
+    font-family: 'Nunito', sans-serif;
+    padding: 10px;
+    background-color: #ffffff;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+#btn_center{
+margin: auto;
+}
+
+
+#avaliacao{
+size: 300px;
+font-weight: bold;
+}
+
+/* fim css  contatos */ 
+
+
+
+
+
